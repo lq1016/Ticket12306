@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <StartArguments>{'OldVersion':'1.2.0','NewVersion':'1.2.3','ExcuteName':'12306购票助手','UpdateContent':'1.修改了部分购票逻辑错误\r\n2.增加了智能购票的功能','FileList':['Common.dll','GlassButton.dll','Newtonsoft.Json.Net35.dll','TicketHelper.exe','TicketHelper.exe.config'],'RootUrl':'http://waner8.com/tickethelper'}</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartArguments>{'OldVersion':'1.2.4.0','NewVersion':'2.0.0.0','ExcuteName':'12306购票助手','ExcuteFileName':'TicketHelper.exe','UpdateContent':'1.针对12306老版本下线开发的新版本。','FileList':['Waner8.Common.dll','Vc.dll','succes.mp3','Newtonsoft.Json.Net35.dll','Ticket12306.exe'],'RootUrl':'http://waner8.com/ticket12306'}</StartArguments>
+  </PropertyGroup>
+</Project>

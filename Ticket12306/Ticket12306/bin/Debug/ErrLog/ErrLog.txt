@@ -1,20 +1,0 @@
-出现应用程序未处理的异常：2014/4/1 11:26:48
-Application UnhandledException:无法加载 DLL“Vc.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。;
-堆栈信息:   在 Ticket12306.CodeAPI.LoadLibFromBuffer(Byte[] FileBuffer, Int32 BufLen, String Password)
-   在 Ticket12306.LoadingForm.<InitData>b__3() 位置 E:\work\我的作品\Ticket12306\Ticket12306\LoadingForm.cs:行号 49
-   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
-   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   在 System.Threading.ThreadHelper.ThreadStart()
----------------------------------------------------------
-出现应用程序未处理的异常：2014/4/1 11:27:07
-Application UnhandledException:无法加载 DLL“Vc.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。;
-堆栈信息:   在 Ticket12306.CodeAPI.LoadLibFromBuffer(Byte[] FileBuffer, Int32 BufLen, String Password)
-   在 Ticket12306.LoadingForm.<InitData>b__3() 位置 E:\work\我的作品\Ticket12306\Ticket12306\LoadingForm.cs:行号 49
-   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
-   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   在 System.Threading.ThreadHelper.ThreadStart()
----------------------------------------------------------
