@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{912F17B5-3BF7-40DA-9588-BBF4755E2E16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ticket12306</RootNamespace>
+    <AssemblyName>Ticket12306</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoBuyTipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoBuyTipForm.Designer.cs">
+      <DependentUpon>AutoBuyTipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProxyForm.Designer.cs">
+      <DependentUpon>ProxyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resx\Files.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Files.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resx\Images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resx\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDateForm.Designer.cs">
+      <DependentUpon>SelectDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPassengerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectPassengerForm.Designer.cs">
+      <DependentUpon>SelectPassengerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectTrainClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectTrainClass.Designer.cs">
+      <DependentUpon>SelectTrainClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service\TicketService.cs" />
+    <Compile Include="Service\Utility\ImageRealize.cs" />
+    <Compile Include="Service\Utility\LoginHelper.cs" />
+    <Compile Include="Service\Utility\VcHelper.cs" />
+    <Compile Include="TipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipForm.Designer.cs">
+      <DependentUpon>TipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\CodeAPI.cs" />
+    <Compile Include="Utility\Common.cs" />
+    <Compile Include="Utility\IEHelper.cs" />
+    <Compile Include="Utility\JsFuncitonHelper.cs" />
+    <Compile Include="Utility\MP3Helper.cs" />
+    <Compile Include="Utility\TicketHelper.cs" />
+    <Compile Include="Utility\UserManager.cs" />
+    <Compile Include="VcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VcForm.Designer.cs">
+      <DependentUpon>VcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Webbrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Webbrowser.Designer.cs">
+      <DependentUpon>Webbrowser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoBuyTipForm.resx">
+      <DependentUpon>AutoBuyTipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ProxyForm.resx">
+      <DependentUpon>ProxyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\Files.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Files.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDateForm.resx">
+      <DependentUpon>SelectDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectPassengerForm.resx">
+      <DependentUpon>SelectPassengerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectTrainClassForm.resx">
+      <DependentUpon>SelectTrainClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipForm.resx">
+      <DependentUpon>TipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VcForm.resx">
+      <DependentUpon>VcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Webbrowser.resx">
+      <DependentUpon>Webbrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\CodeData.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Waner8.Common\Waner8.Common.csproj">
+      <Project>{11B92D24-E1B0-469F-8405-34EF78246923}</Project>
+      <Name>Waner8.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VcData.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <None Include="Resources\Sta.txt" />
+    <None Include="Resources\loading1.gif" />
+    <None Include="Resources\VcCode0.txt" />
+    <None Include="Resources\VcCode3.txt" />
+    <None Include="Resources\VcCode2.txt" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\VcCode1.txt" />
+    <None Include="Resources\Order.png" />
+    <None Include="Resources\Sorry.png" />
+    <None Include="Resources\loading2.gif" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\Sys.png" />
+    <None Include="Resources\message.png" />
+    <None Include="Resources\IconAdd.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Sub.png" />
+    <None Include="Resources\VcLoding.gif" />
+    <None Include="Resources\Bg.png" />
+    <None Include="Resources\CitiesJson.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
